@@ -1,0 +1,21 @@
+[package]
+name = "indexer"
+version = "0.1.0"
+edition = "2021"
+
+
+[workspace]
+members = [
+    "crates/index",
+    "crates/models",
+    "crates/db",
+    "crates/utils",
+    "crates/cli",
+]
+
+[dependencies]
+index = { path = "./crates/index" }
+models = { path = "./crates/models" }
+db = { path = "./crates/db" }
+utils = { path = "./crates/utils" }
+cli = { path = "./crates/cli" }
