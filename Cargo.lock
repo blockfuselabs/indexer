@@ -7,11 +7,11 @@ name = "cli"
 version = "0.1.0"
 
 [[package]]
-name = "db"
+name = "core"
 version = "0.1.0"
 
 [[package]]
-name = "index"
+name = "db"
 version = "0.1.0"
 
 [[package]]
@@ -19,14 +19,19 @@ name = "indexer"
 version = "0.1.0"
 dependencies = [
  "cli",
+ "core",
  "db",
- "index",
  "models",
+ "p2p",
  "utils",
 ]
 
 [[package]]
 name = "models"
+version = "0.1.0"
+
+[[package]]
+name = "p2p"
 version = "0.1.0"
 
 [[package]]

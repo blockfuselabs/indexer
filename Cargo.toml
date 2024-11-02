@@ -6,16 +6,18 @@ edition = "2021"
 
 [workspace]
 members = [
-    "crates/index",
+    "crates/core",
     "crates/models",
     "crates/db",
     "crates/utils",
     "crates/cli",
+    "crates/p2p",
 ]
 
 [dependencies]
-index = { path = "./crates/index" }
+core = { path = "./crates/core" }
 models = { path = "./crates/models" }
 db = { path = "./crates/db" }
 utils = { path = "./crates/utils" }
 cli = { path = "./crates/cli" }
+p2p = { path = "./crates/p2p" }
